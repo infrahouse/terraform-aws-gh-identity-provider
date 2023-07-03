@@ -33,4 +33,4 @@ No modules.
 ## Outputs
 | Name | Description |
 |------|-------------|
-| <a name="output_gh_openid_connect_provider_arb"></a> [gh\_openid\_connect\_provider\_arb](#output\_gh\_openid\_connect\_provider\_arb) | ARN of the created GitHub connector |
+| <a name="output_gh_openid_connect_provider_arn"></a> [gh\_openid\_connect\_provider\_arn](#output\_gh\_openid\_connect\_provider\_arn) | ARN of the created GitHub connector |
