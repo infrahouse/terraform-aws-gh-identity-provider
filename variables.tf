@@ -1,6 +1,6 @@
 variable "thumbprints" {
   description = ""
-  type = list(string)
+  type        = list(string)
   default = [
     # Generated with
     # https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc_verify-thumbprint.html
