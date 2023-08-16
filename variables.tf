@@ -1,5 +1,5 @@
 variable "thumbprints" {
-  description = ""
+  description = "A list of server certificate thumbprints for the OpenID Connect (OIDC) identity provider's server certificate(s). See https://github.blog/changelog/2023-06-27-github-actions-update-on-oidc-integration-with-aws/ for details"
   type        = list(string)
   default = [
     # Generated with
