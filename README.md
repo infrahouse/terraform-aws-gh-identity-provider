@@ -30,7 +30,7 @@ For more information check following resources:
 ```hcl
 module "github-connector" {
   source  = "infrahouse/gh-identity-provider/aws"
-  version = "1.0.2"
+  version = "1.0.3"
 }
 ```
 For the next step, check the [gha-admin](https://registry.terraform.io/modules/infrahouse/gha-admin/aws/latest) module.
