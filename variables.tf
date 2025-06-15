@@ -9,3 +9,9 @@ variable "thumbprints" {
     "1c58a3a8518e8759bf075b76b750d4f2df264fcd"
   ]
 }
+
+variable "url" {
+  description = "The URL for the OpenID Connect (OIDC) in the cluster"
+  type        = string
+  default     = "https://token.actions.githubusercontent.com"
+}
