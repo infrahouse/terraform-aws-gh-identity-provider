@@ -1,4 +1,4 @@
 module "tests" {
   source = "./../../"
-  url = "https://test.com"
+  url    = "https://test.com"
 }

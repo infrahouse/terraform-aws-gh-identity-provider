@@ -12,6 +12,6 @@ variable "thumbprints" {
 
 variable "url" {
   description = "The URL for the OpenID Connect (OIDC) in the cluster"
-  type = string
-  default = "https://token.actions.githubusercontent.com"
+  type        = string
+  default     = "https://token.actions.githubusercontent.com"
 }

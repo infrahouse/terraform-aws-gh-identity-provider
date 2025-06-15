@@ -4,4 +4,10 @@ resource "aws_iam_openid_connect_provider" "github" {
     "sts.amazonaws.com"
   ]
   thumbprint_list = var.thumbprints
+  tags = merge(
+    local.default_module_tags,
+    {
+      module_version : local.module_version
+    }
+  )
 }
