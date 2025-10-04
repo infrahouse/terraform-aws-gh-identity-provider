@@ -34,19 +34,18 @@ module "github-connector" {
 }
 ```
 For the next step, check the [gha-admin](https://registry.terraform.io/modules/infrahouse/gha-admin/aws/latest) module.
-
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.11 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.11, < 7.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.11 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.11, < 7.0 |
 
 ## Modules
 
@@ -62,7 +61,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_thumbprints"></a> [thumbprints](#input\_thumbprints) | A list of server certificate thumbprints for the OpenID Connect (OIDC) identity provider's server certificate(s). See https://github.blog/changelog/2023-06-27-github-actions-update-on-oidc-integration-with-aws/ for details | `list(string)` | <pre>[<br>  "6938fd4d98bab03faadb97b34396831e3780aea1",<br>  "1c58a3a8518e8759bf075b76b750d4f2df264fcd"<br>]</pre> | no |
+| <a name="input_thumbprints"></a> [thumbprints](#input\_thumbprints) | A list of server certificate thumbprints for the OpenID Connect (OIDC) identity provider's server certificate(s). See https://github.blog/changelog/2023-06-27-github-actions-update-on-oidc-integration-with-aws/ for details | `list(string)` | <pre>[<br/>  "6938fd4d98bab03faadb97b34396831e3780aea1",<br/>  "1c58a3a8518e8759bf075b76b750d4f2df264fcd"<br/>]</pre> | no |
+| <a name="input_url"></a> [url](#input\_url) | The URL for the OpenID Connect (OIDC) in the cluster | `string` | `"https://token.actions.githubusercontent.com"` | no |
 
 ## Outputs
 
