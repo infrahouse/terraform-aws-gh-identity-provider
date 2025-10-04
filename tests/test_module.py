@@ -65,10 +65,6 @@ def test_module(
                       source  = "hashicorp/aws"
                       version = "{aws_provider_version}"
                     }}
-                    random = {{
-                      source  = "hashicorp/random"
-                      version = "~> 3.6"
-                    }}
                   }}
                 }}
                 """
